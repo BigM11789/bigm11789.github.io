@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druid's Lair</title>
+    <style>
+        @font-face {
+            font-family: 'Ringbearer';
+            src: url('fonts/ringbearer.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Ringbearer', serif;
+            background-image: url('images/druids.jpg'); /* Add your background image here */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the background image */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            color: #d4af37; /* Gold text color for a magical feel */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px #d4af37, 0 0 15px #d4af37; /* Adds a glowing effect */
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 5px #d4af37; /* Adds a subtle glowing effect */
+        }
+
+        a {
+            text-decoration: none;
+            color: #d4af37; /* Gold text color for links */
+            background-color: #3c3c3c; /* Dark button background */
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 1.2em;
+            position: relative;
+            text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff4500; /* Glowing effect */
+            border: 2px solid #d4af37; /* Gold border for buttons */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        a:hover {
+            background-color: #5a5a5a; /* Lighter button background on hover */
+            text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500; /* More intense glowing effect on hover */
+        }
+
+        /* Optional: Add a flickering flame effect */
+        @keyframes flame {
+            0% {
+                text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff4500;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff4500;
+            }
+        }
+
+        a {
+            animation: flame 1.5s infinite alternate; /* Apply flame animation */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Druid's Lair</h1>
+        <p>You enter the Druid's Lair, ahead of you are 5 paths, which one do you choose?</p>
+        <a href="https://www.druidslairllc.com" target="_blank">Visit Druids Lair LLC</a>
+        <a href="https://www.tcgplayer.com/search/all/product?seller=6fd81401&view=grid&page=1" target="_blank">Browse TCG Player</a>
+        <a href="https://www.facebook.com/druidslairllc/" target="_blank">Follow on Facebook</a>
+        <a href="https://www.instagram.com/druidslairllc/" target="_blank">Follow on Instagram</a>
+        <a href="https://x.com/DruidsLairLLC" target="_blank">Follow on X (formerly Twitter)</a>
+    </div>
+</body>
+</html>
