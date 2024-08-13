@@ -18,6 +18,7 @@
             background-size: cover; /* Ensures the image covers the entire background */
             background-position: center; /* Centers the background image */
             background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Makes the background image stay fixed when scrolling */
             color: #d4af37; /* Gold text color for a magical feel */
             text-align: center;
             margin: 0;
@@ -81,6 +82,23 @@
 
         a {
             animation: flame 1.5s infinite alternate; /* Apply flame animation */
+        }
+
+        /* Make the background image responsive */
+        @media screen and (max-width: 600px) {
+            body {
+                background-size: auto 100%; /* Adjust background size for smaller screens */
+            }
+            h1 {
+                font-size: 2em; /* Adjust heading size for smaller screens */
+            }
+            p {
+                font-size: 1.2em; /* Adjust paragraph size for smaller screens */
+            }
+            a {
+                font-size: 1em; /* Adjust link size for smaller screens */
+                padding: 10px 20px; /* Adjust padding for smaller screens */
+            }
         }
     </style>
 </head>
